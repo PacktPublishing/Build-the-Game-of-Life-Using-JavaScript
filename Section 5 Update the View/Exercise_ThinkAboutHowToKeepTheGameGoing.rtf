@@ -1,0 +1,58 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;\f1\fnil\fcharset0 Menlo-Regular;\f2\fnil\fcharset0 Monaco;
+\f3\fnil\fcharset0 HelveticaNeue-Italic;}
+{\colortbl;\red255\green255\blue255;\red46\green45\blue42;\red255\green255\blue255;\red162\green70\blue22;
+\red31\green36\blue45;\red63\green69\blue80;}
+{\*\expandedcolortbl;;\cssrgb\c23529\c23137\c21569;\cssrgb\c100000\c100000\c100000;\cssrgb\c70196\c35294\c10588;
+\cssrgb\c16078\c18824\c23137;\cssrgb\c31373\c34118\c38824;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}.}{\leveltext\leveltemplateid1\'01.;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+{\info
+{\author Elisabeth Robson}}\margl1440\margr1440\vieww19520\viewh25200\viewkind0
+\deftab720
+\pard\pardeftab720\sl920\partightenfactor0
+
+\f0\fs72 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Exercise: Think about how to keep the game going\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs36 \cf2 The Game of Life is generating cells for one round of the game; our next task is to keep the game going for multiple generations. Take another look at the code we've got so far; to play the game, we're calling\'a0
+\f1 \cf4 \strokec4 play
+\f0 \cf2 \strokec2 , which calls\'a0
+\f1 \cf4 \strokec4 computeNextGen
+\f0 \cf2 \strokec2 .\cb1 \
+\cb3 What do you think is the best way to have our game continue computing new generations? Should we iteratively loop using\'a0
+\f1 \cf4 \strokec4 playing
+\f0 \cf2 \strokec2 \'a0after the Start button is clicked?\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls1\ilvl0
+\f2\fs24 \cf4 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 function\cf5 \strokec5  play() \{\cf6 \cb1 \strokec6 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls1\ilvl0\cf5 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5     \cf4 \strokec4 while\cf5 \strokec5  (playing) \{\cf6 \cb1 \strokec6 \
+\ls1\ilvl0\cf5 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5         computeNextGen();\cf6 \cb1 \strokec6 \
+\ls1\ilvl0\cf5 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5     \}\cf6 \cb1 \strokec6 \
+\ls1\ilvl0\cf5 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5 \}\cf6 \cb1 \strokec6 \
+\pard\pardeftab720\sa400\partightenfactor0
+
+\f0\fs36 \cf2 \cb3 \strokec2 Are there any downsides to doing it this way? Can you think of a better way?\cb1 \
+\pard\pardeftab720\sl520\partightenfactor0
+
+\fs48 \cf2 \cb3 Our answer\cb1 \
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs36 \cf2 \cb3 Conceptually, wrapping the\'a0
+\f1 \cf4 \strokec4 computeNextGen
+\f0 \cf2 \strokec2 \'a0function in a loop is the right idea; however, in practice, it is problematic. As it turns out JavaScript only has one thread of control, and so as soon as you begin the while loop, this code will consume most of your browser's computing resources and make the game controls unresponsive, or slow to act. This approach also doesn't allow you to control the speed at which each generation is computed, which may be too fast to see the Game of Life computation unfold.\cb1 \
+\cb3 We gave you a hint about how we're going to approach this when we gave you some research homework on the\'a0
+\f1 \cf4 \strokec4 setTimeout
+\f0 \cf2 \strokec2 \'a0method. By using\'a0
+\f1 \cf4 \strokec4 setTimeout
+\f0 \cf2 \strokec2 \'a0we'll be able to control the execution of each generation by scheduling it to run\'a0
+\f3\i asynchronously
+\f0\i0 \'a0(meaning the execution of the function to compute the next generation won't block everything else the browser is doing). Let's move on to the next section and see how this works.\cb1 \
+}

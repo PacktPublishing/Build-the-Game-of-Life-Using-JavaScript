@@ -1,0 +1,47 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red46\green45\blue42;\red255\green255\blue255;\red162\green70\blue22;
+}
+{\*\expandedcolortbl;;\cssrgb\c23529\c23137\c21569;\cssrgb\c100000\c100000\c100000;\cssrgb\c70196\c35294\c10588;
+}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+{\info
+{\author Elisabeth Robson}}\margl1440\margr1440\vieww19520\viewh25200\viewkind0
+\deftab720
+\pard\pardeftab720\sl920\partightenfactor0
+
+\f0\fs72 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 The rules of the Game of Life: Overview\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs36 \cf2 We're ready to apply the rules of the game to the cells in the grid. To do that, we're going to use the state stored in\'a0
+\f1 \cf4 \strokec4 grid
+\f0 \cf2 \strokec2 \'a0array. Wherever there's a 1 in that array, we have a live cell, and wherever there's a 0, we have a dead cell. Let's do a quick refresher of the rules of The Game of Life before we start implementing the code (in the next lesson):\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa400\partightenfactor0
+\ls1\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Any live cell with fewer than two live neighbors dies, as if caused by under-population.\cb1 \uc0\u8232 
+\fs40 \
+\ls1\ilvl0
+\fs36 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Any live cell with two or three live neighbors lives on to the next generation.\cb1 \uc0\u8232 
+\fs40 \
+\ls1\ilvl0
+\fs36 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Any live cell with more than three live neighbors dies, as if by overcrowding.\cb1 \uc0\u8232 
+\fs40 \
+\ls1\ilvl0
+\fs36 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.\cb1 \uc0\u8232 
+\fs40 \
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs36 \cf2 \cb3 Now imagine applying these rules to every item in the\'a0
+\f1 \cf4 \strokec4 grid
+\f0 \cf2 \strokec2 \'a0array. We'll iterate through all the cells in the\'a0
+\f1 \cf4 \strokec4 grid
+\f0 \cf2 \strokec2 \'a0array, and as we iterate, we'll call a function to apply the rules to every cell, and store the new state of that cell in the\'a0
+\f1 \cf4 \strokec4 nextGrid
+\f0 \cf2 \strokec2 .\cb1 \
+\cb3 To see how we're going to do this, watch the video in the next lesson. Then we'll get started implementing the rules for The Game of Life.\cb1 \
+}

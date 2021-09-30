@@ -1,0 +1,30 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red46\green45\blue42;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c23529\c23137\c21569;\cssrgb\c100000\c100000\c100000;}
+{\info
+{\author Elisabeth Robson}}\margl1440\margr1440\vieww19520\viewh25200\viewkind0
+\deftab720
+\pard\pardeftab720\sl920\partightenfactor0
+
+\f0\fs72 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 The Game Plan: Big Picture\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs36 \cf2 Now that you know what we're going to build, we need a game plan. In technical terms we want to build a one-page browser-based app that implements the Game of Life. So how should we approach building it? We're going to use a common technique used to build apps that breaks the problem down into three components:\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {{\NeXTGraphic Pasted Graphic.jpg \width10240 \height2780 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}
+\f0\fs36 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\pard\pardeftab720\sa400\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sa400\partightenfactor0
+\cf2 \cb3 The first component is going to be the view we see in the browser. This is largely going to be done using HTML and CSS, and will provide us with a visual, clickable grid as well as a set of buttons to control the game.\cb1 \
+\cb3 Next we'll have some code that takes care of handling the user's actions, whether the user is clicking on the grid, or one of the buttons. Say, the user clicks on a cell in the grid, this code make sure everything happens behind the scenes to reflect that change in the grid.\cb1 \
+\cb3 Finally, we have the data structure (some people call this the model), which tracks the state of the grid, and knows how to compute future generations of the grid.\cb1 \
+\cb3 Now that you've got the big picture of how we're going to approach this, let's get started first on the grid view by creating some markup and style. As you're going to see we'll ultimately need a little code to get our view on screen as well.\cb1 \
+}

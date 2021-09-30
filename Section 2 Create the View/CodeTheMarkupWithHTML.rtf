@@ -1,0 +1,31 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;\f1\fnil\fcharset0 Menlo-Regular;\f2\fnil\fcharset0 HelveticaNeue-Italic;
+}
+{\colortbl;\red255\green255\blue255;\red46\green45\blue42;\red255\green255\blue255;\red13\green100\blue126;
+\red162\green70\blue22;}
+{\*\expandedcolortbl;;\cssrgb\c23529\c23137\c21569;\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c46667\c56863;
+\cssrgb\c70196\c35294\c10588;}
+{\info
+{\author Elisabeth Robson}}\margl1440\margr1440\vieww19520\viewh25200\viewkind0
+\deftab720
+\pard\pardeftab720\sl920\partightenfactor0
+
+\f0\fs72 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Code the Markup with HTML\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs36 \cf2 As we said, we'll begin with the markup for our Game of Life page, and we're going to keep it quite minimal because our focus in this project is on the interaction between the markup, the style and the behavior and not on writing fancy web pages. We don't need a lot of HTML and CSS; to code a compelling Game of Life, all we really need is a basic grid.\cb1 \
+\cb3 So first, let's get all the required HTML out of the way:\'a0{\field{\*\fldinst{HYPERLINK "https://gist.github.com/bethrobson/27c98b5ba1633449575d"}}{\fldrslt \cf4 \strokec4 Click here to see the code on Github}}.\cb1 \
+\cb3 As just a quick flyover, notice that we're linking to a CSS file, "life.css" (which we'll get to next), and that we're also including a JavaScript file, "code.js", at the bottom of the page. By placing the JavaScript at the bottom of the page we can ensure the rest of the page is loaded (and, more importantly, the DOM has been created) before the JavaScript begins its execution.\cb1 \
+\cb3 Now let's look more closely at the body of the HTML. The structure is quite simple. It consists of two <div> elements: one with an id of\'a0
+\f1 \cf5 \strokec5 gridContainer
+\f0 \cf2 \strokec2 \'a0that will hold the grid, and another with an id of\'a0
+\f1 \cf5 \strokec5 controls
+\f0 \cf2 \strokec2 \'a0to hold our buttons to control the game. We're going to begin with start and clear buttons, and add a random button later in the project.\cb1 \
+\cb3 Going back to the grid, right now all we have is a simple div that is going to hold the grid. We obviously don't have a grid yet, and how are we going to represent the grid anyway? We're going to use an HTML table. Now we\'a0
+\f2\i could
+\f0\i0 \'a0just type in a table with hundreds or thousands of table cells in now, but instead, we're going to use our programming skills to write code to do it for us. That is, we're going to create the grid\'a0
+\f2\i dynamically
+\f0\i0 , using JavaScript. Not only is that going save us a lot of typing, it also makes the job of creating grids of different sizes easier.\cb1 \
+\cb3 So, for now, go ahead and create your HTML file. We'll create the "life.css" file in the next lesson, and then we'll start tackling the JavaScript to create the grid dynamically.\cb1 \
+}

@@ -1,0 +1,110 @@
+Game of Life
+
+Section One: Build the Game of Life
+* Guide to the Project: ProjectVideo.mp4
+* Introduction: Module1Intro.mp4
+* Prerequisites and Tools: text
+* Exercise: Play the game of Life on paper: text
+* Observations about the Game of Life: text
+* Field Trip: Learn more about the Game of Life: text
+* The Game Plan: The Game Plan.mp4
+* The Game Plan: Big Picture: text
+* Audience Question: text
+
+Section Two: Create the View
+* Introduction: Module2Intro.mp4
+* Code the Markup with HTML: text
+* Code the Style with CSS: text
+* Exercise: Think about the grid
+* Create the grid: Life_CreateTheGrid.mp4
+* Overheard on the Forum: text
+* Exercise: Try creating the grid: text
+* Create the grid with JavaScript: LifeCreateTheGrid_JS.mp4
+* Create the grid with JavaScript: Write the Code: text
+* Crash test the grid: LifeCreateTheGrid_Test.mp4
+
+
+Section Three: Interact with the Grid
+* Introduction: Module3Intro.mp4
+* How to turn on a cell: Life_ClickHandler.mp4
+* Quiz 1: DOM Events Puzzle: text (should be added as a Quiz)
+* Add a click handler: Life_ClickHandlers_Imp.mp4
+* Add a click handler: Write the code: text
+* Crash test the click handler: Life_ClickHandlers_Imp_Test.mp4
+* Take a Break: Explore the Game of Life: text
+* Handle Button Clicks: Life_Buttons.mp4
+* Exercise: Design the Button Handlers: text
+* Implement the button click handlers: Life_Buttons_IMP.mp4
+* Crash test the button click handlers: Life_Buttons_Test.mp4
+
+Section Four: Create the Grid Model
+* Introduction: Module4Intro.mp4
+* Design the Model: text
+* Overheard on the forum: text
+* Code the grid model: Write the code: text
+* Code the grid model: Life_Model_Imp.mp4
+* Crash test the grid model: Life_Model_Test.mp4
+* Exercise: Think about the grid model: text
+* The rules of the Game of Life: Overview: text
+* The rules of the Game of Life: Life_Generate.mp4
+* Compute one generation: Overview: text
+* Compute one generation: Life_Generate_Imp.mp4
+* Crash test the code to compute one generation: Life_Generate_Test.mp4
+* Exercise: Research the setTimeout function: text
+* Take a break: Generative Applications: text
+
+Section Five: Update the View
+* Introduction: Module5Intro.mp4
+* The game plan for the view: text
+* Update the View from the Model: Overview: text
+* Update the View from the Model: Life_UpdateView.mp4
+* Audience Question: text
+* Crash test the View code: Life_UpdateView_test.mp4
+* Exercise: Think about how to keep the game going
+* Plan the timer: Life_Generations.mp4
+* Code the timer: Overview: text
+* Code the timer: Life_Generations_Imp.mp4
+* Crash test the timer: Life_Generations_Test.mp4
+
+Section Six: Finish the Game
+* Introduction: Module6Intro.mp4
+* Code the clear button: Overview: text
+* Code the clear button: Life_Clear.mp4
+* Crash test the clear button: Life_ClearImpbug.mp4
+* We have a bug!: Life_ClearBugExplain.mp4
+* Fix the bug: Life_ClearBugImpFix.mp4
+* Bonus: Add a random button: text
+* Final design and test: Overview: text
+* Final design and test: Life_Random.mp4
+* The finish line: text
+* The final code: text
+
+Section Seven: Extras
+* Bonus Lesson: text
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
